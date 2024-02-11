@@ -1,12 +1,13 @@
-package com.ecommerce_api.ecommerce_api;
+package com.Ecommerce.ProductManagement;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class EcommerceApiApplication {
+public class ProductmanagementsystemApplication {
+
 	public static void main(String[] args) {
-		SpringApplication.run(EcommerceApiApplication.class, args);
+		SpringApplication.run(ProductmanagementsystemApplication.class, args);
 	}
 
 }

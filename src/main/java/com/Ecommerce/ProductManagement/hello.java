@@ -1,4 +1,4 @@
-package com.ecommerce_api.ecommerce_api;
+package com.Ecommerce.ProductManagement;
 
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestMapping;
