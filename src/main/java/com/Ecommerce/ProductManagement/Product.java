@@ -17,16 +17,20 @@ public class Product {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+
     @JsonProperty("productID")
     private Long id;
 
+    @Column(name = "name")
     private String name;
 
+    @Column(name = "description")
     private String description;
 
+    @Column(name = "price")
     private float price;
 
-    @JsonProperty("quantityAvailable")
+    @Column(name = "quantityAvailable")
     private int quantityAvailable;
 
     public Product(Long id, String name, String description, float price, int quantityAvailable) {
