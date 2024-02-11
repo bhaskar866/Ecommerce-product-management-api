@@ -1,6 +1,7 @@
 package com.Ecommerce.ProductManagement;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import jakarta.persistence.*;
 
@@ -16,7 +17,7 @@ public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
-    private Long product_id;
+    private Long id;
 
     private String name;
 
@@ -24,10 +25,11 @@ public class Product {
 
     private float price;
 
+    @JsonIgnore
     private int quantity_available;
 
-    public Product(Long product_id, String name, String description, float price, int quantity_available) {
-        this.product_id = product_id;
+    public Product(Long id, String name, String description, float price, int quantity_available) {
+        this.id = id;
         this.name = name;
         this.description = description;
         this.price = price;
@@ -37,11 +39,11 @@ public class Product {
     
 
     public Long getId() {
-        return product_id;
+        return id;
     }
 
-    public void setId(Long product_id) {
-        this.product_id = product_id;
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getName() {
